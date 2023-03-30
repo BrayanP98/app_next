@@ -1,0 +1,23 @@
+{
+  "name": "app-next",
+  "version": "1.0.0",
+  "description": "primera app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build & next export -o build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dom": "^0.0.3",
+    "dotenv": "^16.0.3",
+    "mongoose": "^7.0.3",
+    "next": "^13.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
