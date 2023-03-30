@@ -9,4 +9,17 @@ import React from "react";
         </div>
     )
  }
+ export async function getServerSideProps() {
+    try {
+      await dbConnect();
+       //const res= await products.find({})
+
+       let Product= await products.find({})
+       Product = JSON.parse(JSON.stringify(Product))
+       
+      return { props: {Product} };
+    } catch (error) {
+      console.log(error);
+    }
+  }
  
